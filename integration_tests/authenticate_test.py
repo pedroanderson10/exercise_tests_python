@@ -23,11 +23,15 @@ class Authenticate(unittest.TestCase):
 
         json_data = json.loads(response.text)
 
-        print()
+        # texto = json_data['error']
+        # self.assertIn('error', json_data)
+        # self.assertIn('Usuário ou Senha não conferem!', json_data['error'])
 
         self.assertIn('id', json_data)
         self.assertEqual(type(json_data['id']), int)
         self.assertEqual(json_data['id'], 139)
+
+        print()
 
 
         self.assertIn('name', json_data)

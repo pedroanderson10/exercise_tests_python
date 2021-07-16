@@ -10,6 +10,9 @@ def get_url():
 def get_valid_credentials():
     return {'login': 'test.sgme@gmail.com', 'password': 'abcd1234'}
 
+def get_invalid_credentials():
+    return {'login': 'test.sgme@gmaill.com', 'password': 'abcd12345'}
+
 def get_token():
     url = get_url()
     credentials_body = get_valid_credentials()
