@@ -15,8 +15,8 @@ from utils.json_util import *
 @given("a user is in the SGME login page")
 def given(context):
     context.url = get_url()
-    response = requests.get(f"{context.url}")
-    assert_equal(response.status_code, 200)
+    # response = requests.get(f"{context.url}")
+    # assert_equal(response.status_code, 200)
 
 @when("the user insert his invalid credentials")
 def when(context):
